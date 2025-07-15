@@ -1,0 +1,7 @@
+
+
+Git Ignore file website:-
+https://www.toptal.com/developers/gitignore
+
+This project GIT url
+https://github.com/RaChavhan/stock-predict-portal.git
