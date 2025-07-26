@@ -1,7 +1,6 @@
 from django.contrib.auth.models import User
 from  rest_framework import serializers
 
-
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(
         write_only=True,
@@ -21,8 +20,9 @@ class UserSerializer(serializers.ModelSerializer):
         # user = User.objects.create_user(**validated_data) 
         user = User.objects.create_user(
             validated_data['username'],
-            validated_data['password'],
-            validated_data['email']
+            validated_data['email'],
+            validated_data['password']
+            
         )
         # return super().create(validated_data)
         return user

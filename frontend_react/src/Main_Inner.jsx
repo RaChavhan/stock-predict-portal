@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import { Outlet, Link } from "react-router-dom";
 
 function Main_Inner() {
   return (
@@ -13,7 +14,7 @@ function Main_Inner() {
             Mojo Stocks by MarketsMojo </p>
 
           
-          <Button text='Login'  class="btn-outline-info"/>
+          <Button text='Login'  class="btn-outline-info"  url='/login' />
 
         </div>
 

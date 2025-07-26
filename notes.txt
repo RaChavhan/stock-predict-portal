@@ -21,3 +21,6 @@ git push -u origin main
 git remote add origin https://github.com/RaChavhan/stock-predict-portal.git
 git branch -M main
 git push -u origin main
+
+
+push code after work done
