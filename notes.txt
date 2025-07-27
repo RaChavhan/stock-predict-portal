@@ -23,4 +23,11 @@ git branch -M main
 git push -u origin main
 
 
-push code after work done
+******* push code after work done ******
+
+git status
+git add -A
+git commit -m 'login functionality'
+git push origin
+
+create provider and cunsumer rember these 2 word. for login log out authentications

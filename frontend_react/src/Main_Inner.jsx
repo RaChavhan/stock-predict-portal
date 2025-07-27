@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+import Button from './components/Button'
 import { Outlet, Link } from "react-router-dom";
 
 function Main_Inner() {
