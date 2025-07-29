@@ -14,7 +14,7 @@ function Main_Inner() {
             Mojo Stocks by MarketsMojo </p>
 
           
-          <Button text='Login'  class="btn-outline-info"  url='/login' />
+          <Button text='Dashboard'  class="btn-outline-info"  url='/dashboard' />
 
         </div>
 

@@ -47,10 +47,18 @@ const Header = (props) => {
       <div>
         {isLoggedIn ? (
           // <span >Logout</span>
-          <button className='btn btn-danger' onClick={handleLogout} >Logout</button>
-        ) : (
           <>
-            <Button text='Login' class='btn-outline-info' url='/login' />
+           <Button text='Dashboard'  class="btn-outline-info"  url='/dashboard' />
+           &nbsp;
+          <button className='btn btn-danger' onClick={handleLogout} >Logout</button>
+          </>
+          
+        ) : (
+
+          // <span >Login</span>
+          <>
+            <Button text='Login' class='btn-outline-info' url='/login' />  
+            &nbsp;
             <Button text='Register' class='btn-info' url='/register' />
           </>
         )

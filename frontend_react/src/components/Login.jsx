@@ -45,8 +45,8 @@ const Login = () => {
         
         .then((response) => {
           console.log('User logged in:', response.data);
-          localStorage.setItem('AccessToken',response.data.access)
-          localStorage.setItem('RefreshToken' ,response.data.refresh)
+          localStorage.setItem('accessToken',response.data.access)
+          localStorage.setItem('refreshToken' ,response.data.refresh)
           console.log('Login Successful')
           setIsLoggedIn(true)
           navigate('/') // or '/home' //navigate after Axios success
@@ -62,7 +62,7 @@ const Login = () => {
 
     return (
       <div className="container mt-5">
-        <h2 className="mb-4 text-light text-center">Register</h2>
+        <h2 className="mb-4 text-light text-center">Login</h2>
         <form onSubmit={handleLogin}>
           {/* Username */}
           <div className="mb-3">
@@ -102,7 +102,7 @@ const Login = () => {
               {error && <div className='text-danger'>{error}</div>}
 
           {/* Submit Button */}
-          <button type="submit" className="btn btn-primary">Register</button>
+          <button type="submit" className="btn btn-primary">Login</button>
         </form>
       </div>
     );

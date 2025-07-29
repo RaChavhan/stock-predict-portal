@@ -27,7 +27,7 @@ git push -u origin main
 
 git status
 git add -A
-git commit -m 'login functionality'
+git commit -m "login functionality"  // should be in duble cout
 git push origin
 
 create provider and cunsumer rember these 2 word. for login log out authentications

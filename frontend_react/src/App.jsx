@@ -11,6 +11,9 @@ import './assets/CSS/style.css'
 import Register from './components/Register'
 import Login from './components/Login'
 import AuthProvider from './AuthProvider'
+import Dashboard from './components/Dashboard'
+import PrivateRoute from './PrivateRoute'
+import PublicRoute from './PublicRoute'
 
 
 function App() {
@@ -23,8 +26,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Main_Inner />}/>
             
-            <Route path='/Register' element={<Register/>} />
-            <Route path='/login' element={<Login/>} />
+            <Route path='/Register' element={<PublicRoute><Register/></PublicRoute>} />
+            <Route path='/login' element={<PublicRoute><Login/></PublicRoute>} />
+            <Route path='/dashboard' element={ <PrivateRoute><Dashboard/></PrivateRoute>} />
           
         </Routes>
         <Footer />

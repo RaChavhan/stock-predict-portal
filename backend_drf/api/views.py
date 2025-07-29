@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .serializer import UserSerializer
+from account.serializer import UserSerializer
 from rest_framework import generics
 from django.contrib.auth.models import User
 from rest_framework.permissions import AllowAny
